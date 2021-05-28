@@ -1,32 +1,92 @@
-# Exercise 1-3: What do we mean by “level 3 thinking is that the purpose of testing is to reduce risk? ” What
-risk? Can we reduce the risk to zero?
+# Ex1.5
 
-## Scheduling Risk: Testing projects are not efficiently or completely scheduled to meet the deployment deadline. Inefficiency in scheduling can include:
- Inaccurate time estimates
-Improper assessment of required tool resources
-Improper assessment of required manpower resources
-Unanticipated expansion(s) in project scope
-Inaccurate identification of complexities, functionalities, or operations
+* Program 1
 
-## Budget Risk: Required investment is inaccurately anticipated, including:
-Inaccurate Cost Estimation: Certain required items excluded from the estimation of costs
-Cost Overruns: Unanticipated expenses, or inaccurate estimation, have cause unanticipated expenses
-Expansion of the project scope: The project scope is expanded to include initially unanticipated expenses.
+a, Explain what is wrong with the given code. Describe the fault precisely by proposing a modification to the code.
 
-## Operational Risk: Ineffective processing, system failures, or unanticipated circumstances define operational risk. Causes include:
-Failure to establish testing priorities
-Conflicting test priorities
-Insufficient resources
-Improper training
-Improper communication among team members
-Improper communication with enterprise stakeholders
+The code here is not right, because we need the for loop to go from the top to the bottom, but in this code, it only goes from the top to the element next to the bottom, so it can't have a perfect solution.
 
-## Technical Risk: Technical risks often lead to functionality and performance failures. Some causes include:
-Continually changing requirements
-Lack of technical resources
-Product complexities
+public static int findLast (int[] x, int y)
+{ 
+ 
+   for (int i=x.length-1; i >= 0; i--) 
+   {
+      if (x[i] == y) 
+      {
+         return i;
+      }
+   }
+   return -1;
+}
+b
+If possible, give a test case that does not execute the fault. If not, briefly explain why not.
 
-## General Risk:
-Changes in market strategies
-Changes in government regulations
-Changes in customer demands and interests
+test case
+x=[7,9]
+y=9
+c
+If possible, give a test case that executes the fault, but does not result in an error state. If not, briefly explain why not.
+x=[7,7]
+y=7
+d
+x = [1,0,3]
+y= 1
+Program 2 explain what is wrong with the given code. Describe the fault precisely by proposing a modification to the code.
+The statement inside the loop returns the index the first time it is reached, we need it to run until meet the last 0.
+
+
+public static int lastZero (int[] x)
+{ 
+int index = -1
+ for (int i = 0; i < x.length; i++)
+{ 
+ if (x[i] == 0)
+{ 
+ index = i;;
+} 
+}
+ return index;
+ }
+
+b
+ All inputs execute the missing initialization added before the loop. so that, all
+inputs execute the fault
+
+program 3
+a, explain what is wrong with the given code. Describe the fault precisely by proposing a modification to the code.
+we need to find positive element but in this code, we count 0, and 0 is not a positive number.
+public int countPositive (int[] x) 
+{ 
+int count = 0; 
+for (int i=0; i < x.length; i++) 
+{ 
+if (x[i] > 0) 
+{ 
+count++; 
+} 
+} 
+return count;
+b,
+If possible, give a test case that does not execute the fault. If not, briefly explain why not.
+
+x= [1,-2]
+c,If possible, give a test case that executes the fault, but does not result in an error state. If not, briefly explain why not.
+if we have 0 in the test case, it will always execute it, so it imposible.
+
+program 4
+a, explain what is wrong with the given code. Describe the fault precisely by proposing a modification to the code.
+it weong in the logical operator, it must be "&&" while it has "||"  
+public static int oddOrPos(int[] x)
+{ 
+ int count = 0;
+for (int i = 0; i < x.length; i++)
+{ 
+if (x[i]%2 == 1 && x[i] > 0)
+{ 
+ count++;
+} 
+} 
+ return count;
+
+b,if possible, give a test case that does not execute the fault. If not, briefly explain why not.
+x=[2, -2, 1]
