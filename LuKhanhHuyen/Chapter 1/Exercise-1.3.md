@@ -1,4 +1,4 @@
-# Excercise 1.3 #
+# Exercise 1.3 #
 What do we mean by “level 3 thinking is that the purpose of testing is to reduce risk?”
 * The purpose of testing is to know more faults therefore to reduce risk in the future.
 

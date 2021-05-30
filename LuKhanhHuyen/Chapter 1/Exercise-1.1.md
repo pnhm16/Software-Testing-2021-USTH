@@ -1,4 +1,4 @@
-# Excercise 1.1 #
+# Exercise 1.1 #
 What are some factors that would help a development organization move from Beizer’s testing level 2 (testing is to show errors) to testing level 4 (a mental discipline that increases quality)?
 
 ## The thinking ##
