@@ -5,13 +5,13 @@ public class Vehicle implements Cloneable {
 
     public Vehicle(int y) {
         x = y;
+//        System.out.println(x);
     }
 
     @Override
     public Object clone() {
-        Object result = new Vehicle(this.x);
         // Location "A"
-        return result;
+        return new Vehicle(this.x);
     }
 
     @Override
