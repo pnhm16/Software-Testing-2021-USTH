@@ -1,4 +1,4 @@
-Exercise 3.10
+Exercise 3.10.
 
 The resulting theory is not valid because order matters in lists. When we remove then add an element back, its position in the list could have been changed and therefore, the list is different.
 
