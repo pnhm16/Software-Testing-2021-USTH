@@ -1,0 +1,35 @@
+!Question: Given the 4 faulty programs. Answer questions
+
+!Answer:
+*** Find last Element
+a. Does not check the first index of array.
+    Modification: for (int i=x.length-1; i>-1; i--)
+b. test: x = [1, 2, 3], y = 2; Expect = 1
+c, d, e. There will be no error state.
+
+*** Find last index Zero
+a. Check for the first index of zero instead of the last.
+    Modification: for (int i=x.length-1; i > -1; i--)
+b. test: x = [1, 1, 0]; Expect = 2
+c, d, e. There will be no error state.
+
+*** Count positive elements
+a. The method does not static.
+        Modification: public static int countPositive(int[] x)
+   The condition takes 0 as a positive values
+        Modification: if (x[i] > 0)
+b, c, d. There will always be an error.
+e. The error is: non-static method countPositive(int[])
+After fixing the non-static method
+b. test: x = [1, 2, -1, 2]; Expect = 3
+
+*** Conut odd or positive elements
+a. The % cannot apply for minus values
+        Modification: if (Math.abs(x[i])%2 == 1 || x[i] > 0)
+b. test x = [0, 1, 2, 4, -2]; Expect = 3
+c, d, e. There will be no error state
+
+*** The f questions of all methods: Check Exercise_1_5.java
+
+
+
