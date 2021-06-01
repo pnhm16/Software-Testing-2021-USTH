@@ -1,0 +1,6 @@
+Topic: Give a one-to-two paragraph explanation for how the inheritance hierarchy can affect controllability
+and observability.
+
+Answer: inheritance hierarchy affects controllability as we will need to control every superclass and its subclasses,
+and if we have a deep inheritance tree, it will be very complicated. On the other hand it affects the observability,
+we need to observe a large number of subclasses that are actually doing the same job as the super class.
