@@ -1,0 +1,90 @@
+Chapter 3:
+Ex3.2: Inheritance can make following input and output hard, since you have to keep 
+track of multiple class definitions to be able to get an holistic view of what is 
+going on when the tests are running. 
+
+Ex3.3: 
+public class BoundedQueueTest {
+    /**
+     * Test of enQueue method
+     */
+    @Test
+    public void testEnQueue() {
+        System.out.println("Hello World");
+        Object o = 1;
+        BoundedQueue instance = new BoundedQueue(5);
+        instance.enQueue(o);
+        
+        assertEquals(instance.toString(), "[1]");
+    }
+
+    /**
+     * Test of deQueue method
+     */
+    @Test
+    public void testDeQueue() {
+        System.out.println("Hello World");
+        Object o = 1;
+        Object a = 2;
+        BoundedQueue instance = new BoundedQueue(5);
+        instance.enQueue(o);
+        instance.enQueue(a);
+        instance.deQueue();
+        
+        assertEquals(instance.toString(), "[2]");
+    }
+
+    /**
+     * Test of isEmpty method
+     */
+    @Test
+    public void testIsEmpty() {
+        System.out.println("isEmpty");
+
+        BoundedQueue instance = new BoundedQueue(5);
+
+        assertEquals(instance.isEmpty(), true);
+    }
+
+    /**
+     * Test of isFull method
+     */
+    @Test
+    public void testIsFull() {
+        System.out.println("Hello World");
+        Object a = 1;
+        BoundedQueue instance = new BoundedQueue(5);
+        instance.enQueue(a);
+        instance.enQueue(a);
+        instance.enQueue(a);
+        instance.enQueue(a);
+        instance.enQueue(a);
+
+        assertEquals(instance.isFull(), true);
+    }
+
+    /**
+     * Test of toString method
+     */
+    @Test
+    public void testToString() {
+        System.out.println("Hello World");
+        Object o = 1;
+        Object a = 2;
+        Object b = 4;
+        BoundedQueue instance = new BoundedQueue(5);
+        instance.enQueue(a);
+        instance.enQueue(b);
+        instance.enQueue(o);
+        assertEquals(instance.toString(), "[2, 4, 1]");
+    }
+}
+
+Ex3.5: 
+Since the methods sort(), add() and getFirst() are tested and word correctly, then names.getFirst().equals ("Alex") 
+must be true. The only missing line that names object isn’t initialized in the code.
+RIRP model: 
+- Reachability: No, because the fault comes from other elements except the first one
+- Infection: Yes
+- Propagation:No, because the first element always correct
+-Revealability: No, fault can't be revealed by the test
