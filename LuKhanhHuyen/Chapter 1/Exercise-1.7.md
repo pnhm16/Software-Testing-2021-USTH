@@ -1,4 +1,4 @@
-# Excercise 1.7
+# Exercise 1.7
 
 ## Vehicle, Truck
 ### a)

@@ -1,4 +1,4 @@
-# Excercise 1.5
+# Exercise 1.5
 ## findLast
 ```Java
 public static int findLast (int[] x, int y)
