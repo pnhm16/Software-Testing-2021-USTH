@@ -1,0 +1,2 @@
+Exercise-2.2: If you have never worked for a software development company, which of the four test activities do you think you are best qualified for? (Test design, automation, execution, evaluation)
+    I think I would be best qualified for test design 'caused I can do all the best for this step like : Gathering information to understand users' requirements, derive all important business scenarios and design test scenarios for every derived critical business scenarios. For me this is the easiest step
