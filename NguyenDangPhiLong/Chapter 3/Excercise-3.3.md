@@ -1,9 +1,5 @@
-Chapter 3:
-Ex3.2: Inheritance can make following input and output hard, since you have to keep 
-track of multiple class definitions to be able to get an holistic view of what is 
-going on when the tests are running. 
-
-Ex3.3: 
+# Ex3.3: 
+```java
 public class BoundedQueueTest {
     /**
      * Test of enQueue method
@@ -79,12 +75,4 @@ public class BoundedQueueTest {
         assertEquals(instance.toString(), "[2, 4, 1]");
     }
 }
-
-Ex3.5: 
-Since the methods sort(), add() and getFirst() are tested and word correctly, then names.getFirst().equals ("Alex") 
-must be true. The only missing line that names object isn’t initialized in the code.
-RIRP model: 
-- Reachability: No, because the fault comes from other elements except the first one
-- Infection: Yes
-- Propagation:No, because the first element always correct
--Revealability: No, fault can't be revealed by the test
+```
