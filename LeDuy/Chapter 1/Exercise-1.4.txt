@@ -43,4 +43,3 @@ public static <T> Vector<T> union(Vector<T> a, Vector<T> b) {
         vector.addAll(b);
         return vector;
 }
-
