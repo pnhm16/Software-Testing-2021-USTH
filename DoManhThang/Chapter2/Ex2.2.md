@@ -1,0 +1,2 @@
+#### 2.2: If you have never worked for a software development company, which of the four test activities do you think you are best qualified for? (test design, automation, execution, evaluation)
+I never worked for a software development company, so I will choose test design as a stepping stone. Because test design is quite lively and intuitive, we only need basic skills to understand the purpose of the software. it's also an important step in testing the user's software experience so I think software companies often pay attention to this.
